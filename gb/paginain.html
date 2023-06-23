@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" href="gb1.png">
+    <style>
+        body.dark-mode {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="paginain.html"><img src="Blue.png" alt="Logo" width="200" height="40"
+                    class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="gb1.png" alt="Logo" width="30"
+                            height="24" class="d-inline-block align-text-top">
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="container text-center">
+                        <button class="btn btn-primary" onclick="toggleDarkMode()">Modo escuro-Modo claro</button>
+                    </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="shop.html" target="_blank">
+                                <h5 style="color: rgb(34, 108, 206);">Shop</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="estatisticas.html" target="_blank">
+                                <h5 style="color: rgb(34, 108, 206);">Estatísticas</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mapaevento.html" target="_blank">
+                                <h5 style="color: rgb(34, 108, 206);">Mapa do evento</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="horarios.html" target="_blank">
+                                <h5 style="color: rgb(34, 108, 206);">Horários dos jogos</h5>
+                            </a>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ingressos.html" target="_blank">
+                                <h5 style="color: rgb(34, 108, 206);">Ingressos</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="duvidas.html" target="_blank">
+                                <h5 style="color: rgb(34, 108, 206);">Dúvidas</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="contato.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <h5>Contatos</h5>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://instagram.com/ysdaibert?igshid=MzNlNGNkZWQ4Mg==" target="_blank">
+                                        <p style="color: rgb(34, 108, 206);">instagram</p>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="https://twitter.com/YDaibert" target="_blank">
+                                        <p style="color: rgb(34, 108, 206);">twitter</p>
+                                    </a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://www.youtube.com/channel/UCTzXUKbMyu9xZUSbF8nw2Xw" target="_blank">
+                                        <p style="color: rgb(34, 108, 206);">youtube</p>
+                                    </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="Digite aqui">
+                        <input class="form-control me-2" type="Digite aqui" placeholder="Digite aqui"
+                            aria-label="Digite aqui">
+                        <button class="btn btn-outline-success" type="submit">pesquisar</button>
+                    </form>
+                </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="capa.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="capa2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="capa3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">arrasta pro lado</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Leia sobre o campeonato abaixo</span>
+        </button>
+    </div>
+    <header class="container my-4">
+        <div class="row">
+            <div class="col-12 col-lg-6 pt-5">
+                <h1 style="color: rgb(30, 148, 163)"><span>Sobre o campeonato</span></h1>
+                <h4 style="color: rgb(34, 108, 206);">O IEM Rio 2023, campeonato internacional de
+                    Counter-Strike: Global Offensive (CS:GO), reúne 16 times, entre eles os brasileiros MIBR, FURIA e
+                    Imperial. O torneio acontece no Rio de Janeiro de 17 a 23 de abril, com playoffs na Jeunesse Arena,
+                    mesmo local que recebeu a a fase decisiva IEM Major Rio 2022. A premiação é de US$ 250 mil
+                    (equivalentes a cerca de R$ 1,25 milhão na cotação atual).Os 16 times participantes são inicialmente
+                    divididos em dois grupos de oito e se enfrentam, em cada chave, no sistema de dupla eliminação GSL.
+                    Os primeiros confrontos são em melhor de uma partida (md1) e os demais, em md3.
+                </h4>
+                <h4 style="color: rgb(34, 108, 206);"> O melhor time de cada grupo avança direto para as
+                    semifinais, enquanto os 2º e 3º colocados também passam para os playoffs, mas começando nas quartas
+                    de final.
+                </h4>
+                <h4 style="color: rgb(34, 108, 206);">Os playoffs são disputados em séries md3, em
+                    eliminação simples, ou seja, sem chaves superior e inferior
+                </h4>
+                <h1 class="text-center text-md-start mt-5"><span class="text-primary">Equipes participantes</span></h1>
+                <h4 class="text-muted text-center text-md-start mt-3">FURIA (Brasil): Yuri "yuurih", Andrei "arT", Kaike
+                    "KSCERATO", André "drop" e Rafael "saffee"
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">MIBR (Brasil): Raphael "exit", Matheus "Tuurtle",
+                    Breno "brnz4n", Henrique "HEN1" e Felipe "insani"
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">FaZe Clan (Europa): Håvard "rain", Helvijs
+                    "broky", Russel "Twistzz", Finn "Karrigan" e Robin "ropz"
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">Fnatic (Europa): Freddy "KRIMZ", William
+                    "mezii", Nico "nicoodoz", Fredrik "roeJ" e Dion "FASHR"
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">MOUZ (Europa): David "frozen", Christopher
+                    "dexter", Ádám "torzsi", Jon "JDC" e Dorian "xertioN"
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">NAVI (Ucrânia): Oleksandr "s1mple",
+                    Denis "electroNic", Ilya "Perfecto", Valerij "b1t" e Andrij "npl"
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">Ninjas in Pyjamas (Europa):
+                    Fredrik "REZ", Ludvig "Brollan", Danyyl "headtr1ck" e Kristian "k0nfig"
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">Team Vitality (Europa): Dan
+                    "apEX", Mathieu "ZywOo", Peter "dupreeh", Emil "Magisk" e Lotan "Spinx"
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">Heroic (Dinamarca): Martin
+                    "stavn", Casper "cadiaN", René "TeSeS", Rasmus "sjuush" e Jakob "Jabbi"
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">Imperial (Brasil):
+                    Gabriel "FalleN", Ricardo "boltz", Vinicius "VINI", Marcelo "celo" e
+                    Jhonatan "JOTA"
+                </h4>
+
+                <h4 class="text-muted text-center text-md-start mt-3">Cloud9 (Rússia):
+                    Vladislav "nafany", Dmitriy "sh1ro", Sergey "Ax1Le", Abai "HObbit" e
+                    Timur "buster"
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">OG (Europa):
+                    Shahar "flameZ", Adam "NEOFRAG", Maciej "F1KU", Abdulkhalik
+                    "degster" e Nikolaj "niko"
+
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">9INE
+                    (Polônia): Krzysztof "Goofy", Kamil "KEi", Kacper "Kylar",
+                    Wiktor "mynio" e Aleksander "hades"
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">BIG
+                    (Alemanha): Johannes "tabseN", Josef "faveN", Karim
+                    "Krimbo", Nils "k1to" e Marcel "hyped"
+
+                </h4>
+                <h4 class="text-muted text-center text-md-start mt-3">9z
+                    Team (América do Sul): Franco "dgt", Maximiliano
+                    "max", David "dav1deuS", Nicolás "buda" e Santino
+                    "try"
+                </h4>
+
+                <h4 class="text-muted text-center text-md-start mt-3">
+                    The MongolZ (Mongólia): Garidmagnai "bLitz",
+                    Sodbayar "Techno4K", Baatarkhuu "Bart4k",
+                    Tuvshintugs "ANNIHILATION" e Chinguun "hasteka"
+                </h4>
+            </div>
+            <div class="col-12 col-lg-6 p-5">
+                <img src="esl.png" class="img-fluid">
+            </div>
+        </div>
+        <hr>
+    </header>
+    <div class="card-group"data-bs-theme="dark">
+        <div class="card">
+          <img src="tt.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">TWITTER</h5>
+            <p class="card-text">Clique no link abaixo para acessar o Twitter</p>
+            <a href="https://twitter.com/GbesportsC52157" class="btn btn-primary" target="_blank">link</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="yt.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">YOUTUBE</h5>
+            <p class="card-text">Clique no link abaixo para acessar o Youtube</p>
+            <a href="https://www.youtube.com/channel/UCqh7mTDvIntFcbEkTgMCmVg" class="btn btn-primary" target="_blank">link</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="ig.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">INSTAGRAM</h5>
+            <p class="card-text">Clique no link abaixo para acessar meu e-mail</p>
+            <a href="https://instagram.com/gbesportscs?igshid=MzRlODBiNWFlZA==" class="btn btn-primary" target="_blank">link</a>
+          </div>
+        </div>
+      </div>
+      <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
